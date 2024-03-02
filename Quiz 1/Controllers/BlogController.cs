@@ -119,12 +119,12 @@ namespace Quiz_1.Controllers
             else if (slug == "Dota 2")
             {
                 blogmodel.Title = "Dota 2";
-                blogmodel.Sub = "";
+                blogmodel.Sub = "My Top 3 Favorite Hero";
                 blogmodel.BgImage = "~/img/Dota2/dota2.png";
                 blogmodel.Image1 = "~/img/Dota2/phantom.png";
                 blogmodel.Image2 = "~/img/Dota2/slardar.png";
                 blogmodel.Image3 = "~/img/Dota2/sniper.png";
-                blogmodel.Name1 = "PHANTOM ASSASIN ( The Elusive Assassin)";
+                blogmodel.Name1 = "PHANTOM ASSASIN <br>  ( The Elusive Assassin)";
                 blogmodel.Desc1 = "<strong>Role: </strong>Melee/Damage Dealer" +
                     "<br> " +
                     "<strong>Abilities:</strong> " +
@@ -135,13 +135,14 @@ namespace Quiz_1.Controllers
                     "<li><strong>Coup de Grace (R): </strong>PA's critical strike ability, providing a chance to deal massive damage.</li> " +
                     "</ul> " +
                     "<strong>Ideal Lane: </strong> Midlane/Safelane " +
+                    "<br> " +
                     "<strong>Common Items: </strong> " +
                     "<ul> " +
                     "<li><strong>Battle Fury: </strong> Farming efficiency and cleave damage</li> " +
                     "<li><strong>Desolator: </strong>Armor reduction</li> " +
                     "<li><strong>Black King Bar: </strong>Spell immunity</li>" +
                     "</ul> ";
-                blogmodel.Name2 = "SLARDAR ( Slithereen Guard )";
+                blogmodel.Name2 = "SLARDAR <br>  ( Slithereen Guard )";
                 blogmodel.Desc2 = "<strong>Role: </strong>Melee Tank/Initiator" +
                     "<br> " +
                     "<strong>Abilities:</strong> " +
@@ -152,13 +153,14 @@ namespace Quiz_1.Controllers
                     "<li><strong>Corrosive Haze (R): </strong>Slardar Reducing armor of targeted enemies and show location.</li> " +
                     "</ul> " +
                     "<strong>Ideal Lane: </strong>Offlane " +
+                    "<br> " +
                     "<strong>Common Items: </strong> " +
                     "<ul> " +
                     "<li><strong>Blink dagger: </strong>Initiation</li> " +
                     "<li><strong>Assault Cuirass: </strong>Attack speed and reduce enemy armor</li> " +
                     "<li><strong>Black King Bar: </strong>Spell immunity</li>" +
                     "</ul> ";
-                blogmodel.Name3 = "SNIPER ( The Sharpshooter)";
+                blogmodel.Name3 = "SNIPER <br>  ( The Sharpshooter)";
                 blogmodel.Desc3 = "<strong>Role: </strong>Range/Damage Dealer" +
                     "<br> " +
                     "<strong>Abilities:</strong> " +
@@ -169,6 +171,7 @@ namespace Quiz_1.Controllers
                     "<li><strong>Assassinate (R): </strong>Sniper locks onto an enemy, channeling to deliver a high-damage shot from a long range.</li> " +
                     "</ul> " +
                     "<strong>Ideal Lane: </strong>Midlane/Safelane" +
+                    "<br> " +
                     "<strong>Common Items: </strong> " +
                     "<ul> " +
                     "<li><strong>Mjollnir: </strong>Increased damage and lightning procs</li> " +
@@ -179,46 +182,48 @@ namespace Quiz_1.Controllers
             else if (slug == "League of Legends")
             {
                 blogmodel.Title = "League of Legends";
-                blogmodel.Sub = "";
+                blogmodel.Sub = "My Top 3 Favorite Champion";
                 blogmodel.BgImage = "~/img/LOL/lol.png";
                 blogmodel.Image1 = "~/img/LOL/jhin.png";
                 blogmodel.Image2 = "~/img/LOL/kayn.png";
                 blogmodel.Image3 = "~/img/LOL/trundle.png";
-                blogmodel.Name1 = "JHIN (Virtuoso)";
+                blogmodel.Name1 = "JHIN <br> (Virtuoso)";
                 blogmodel.Desc1 = "<strong>Role: </strong>Marksman/ADC (Attack Damage Carry)" +
                     "<br> " +
                     "<strong>Abilities:</strong> " +
                     "<ul> " +
                     "<li><strong>Dancing Grenade (Q): </strong>Bouncing grenade damaging and marking enemies.</li> " +
-                    "<li><strongCaptivate (W): strong>Long-range snare that slows, damages, and roots.</li> " +
+                    "<li><strong>Captivate (W): </strong>Long-range snare that slows, damages, and roots.</li> " +
                     "<li><strong>Deadly Flourish (E): </strong>Skillshot revealing and rooting enemies.</li> " +
                     "<li><strong>Curtain Call (R): </strong>Global high-damage shots, with the last shot dealing massive damage and slowing.</li> " +
                     "</ul> " +
                     "<strong>Ideal Lane: </strong>Bot Lane (Bottom Carry/ADC) " +
+                    "<br> " +
                     "<strong>Common Items: </strong> " +
                     "<ul> " +
                     "<li><strong>Rapid Firecannon: </strong>Extends attack range.</li> " +
                     "<li><strong>Infinity Edge: </strong>Amplifies critical strikes.</li> " +
                     "<li><strong>Collector: </strong>Boosts finishing power.</li>" +
                     "</ul> ";
-                blogmodel.Name2 = "KAYN (The Shadow Reaper)";
+                blogmodel.Name2 = "KAYN <br>  (The Shadow Reaper)";
                 blogmodel.Desc2 = "<strong>Role: </strong>Assassin/Fighter" +
                     "<br> " +
                     "<strong>Abilities:</strong> " +
                     "<ul> " +
                     "<li><strong>Reaping Slash (Q): </strong>Slashes enemies in a line, dealing damage and granting Kayn bonus movement speed.</li> " +
-                    "<li><strong>Blade's Reach (W): </strong>Throws a blade that damages and slows enemies. Gains additional effects based on the chosen form.</li> " +
+                    "<li><strong>Blade's Reach (W): </strong>Throws a blade that damages and slows enemies.</li> " +
                     "<li><strong>Shadow Step (E): </strong>Navigates through terrain, providing increased movement speed.</li> " +
-                    "<li><strong>Umbral Trespass (R): </strong>Becomes untargetable and dashes through an enemy, dealing damage. Transforms Kayn into his chosen form over time.</li> " +
+                    "<li><strong>Umbral Trespass (R): </strong>Becomes untargetable and dashes through an enemy, dealing damage.</li> " +
                     "</ul> " +
-                    "<strong>Ideal Lane: </strong> " +
+                    "<strong>Ideal Lane: </strong>Jungle" +
+                    "<br> " +
                     "<strong>Common Items: </strong> " +
                     "<ul> " +
-                    "<li><strong>Edge of Night: </strong>Provides a shield for added survivability.</li> " +
-                    "<li><strong>Youmuu's Ghostblade: </strong>Enhances mobility and lethality.</li> " +
-                    "<li><strong>Goredrinker: </strong>Grants sustain and bonus damage.</li>" +
+                    "<li><strong>Edge of Night: </strong>survivability.</li> " +
+                    "<li><strong>Youmuu's Ghostblade: </strong>Mobility and lethality.</li> " +
+                    "<li><strong>Goredrinker: </strong>Sustain and Damage.</li>" +
                     "</ul> ";
-                blogmodel.Name3 = "TRUNDLE (The Troll King)";
+                blogmodel.Name3 = "TRUNDLE <br>  (The Troll King)";
                 blogmodel.Desc3 = "<strong>Role: </strong>Fighter/Jungler" +
                     "<br> " +
                     "<strong>Abilities:</strong> " +
@@ -229,6 +234,7 @@ namespace Quiz_1.Controllers
                     "<li><strong>Subjugate (R): </strong>Drains health and steals resistances from the target, making Trundle tankier.</li> " +
                     "</ul> " +
                     "<strong>Ideal Lane: </strong>Jungler/Top Lane " +
+                    "<br> " +
                     "<strong>Common Items: </strong> " +
                     "<ul> " +
                     "<li><strong>Titanic Hydra: </strong>Adds bonus damage and health, improving wave clear.</li> " +
@@ -239,7 +245,7 @@ namespace Quiz_1.Controllers
             else if (slug == "Manga")
             {
                 blogmodel.Title = "Manga";
-                blogmodel.Sub = "";
+                blogmodel.Sub = "My Top 3 Favorite Manga";
                 blogmodel.BgImage = "~/img/Manga/manga.png";
                 blogmodel.Image1 = "~/img/Manga/mounthua.png";
                 blogmodel.Image2 = "~/img/Manga/sololevel.png";
@@ -269,8 +275,8 @@ namespace Quiz_1.Controllers
                     "<strong>Themes:</strong> " +
                     "<ul> " +
                     "<li><strong>Leveling System: </strong>The manga revolves around a unique leveling system that grants individuals special powers, with Sung Jin-Woo's journey of growth and power accumulation at the center.</li> " +
-                    "<li><strong>Monsters and Dungeons: </strong>The narrative is rich with battles against formidable monsters and exploration of mysterious dungeons.</li> " +
-                    "<li><strong>Guilds and Associations: </strong>Sung Jin-Woo navigates the complex world of Hunter guilds, alliances, and political intrigue.</li> " +
+                    "<li><strong>Monsters and Dungeons: </strong>Rich with battles against formidable monsters and exploration of mysterious dungeons.</li> " +
+                    "<li><strong>Guilds and Associations: </strong>Sung Jin-Woo navigates the complex world of Hunter guilds and alliances.</li> " +
                     "</ul> ";
                 blogmodel.Name3 = "TALES OF DEMONS AND GODS";
                 blogmodel.Desc3 = "<strong>Genre: </strong>Fantasy, Martial Arts, Adventure" +
@@ -290,7 +296,7 @@ namespace Quiz_1.Controllers
             else
             {
                 blogmodel.Title = "Valorant";
-                blogmodel.Sub = "";
+                blogmodel.Sub = "My Top 3 Favorite Agents";
                 blogmodel.BgImage = "~/img/Valorant/valorant.png";
                 blogmodel.Image1 = "~/img/Valorant/REYNA.png";
                 blogmodel.Image2 = "~/img/Valorant/CHAMBER.png";
@@ -312,7 +318,7 @@ namespace Quiz_1.Controllers
                     "<strong>Abilities:</strong> " +
                     "<ul> " +
                     "<li><strong>Trademark (C): </strong>Deploys a signature device that marks enemies, revealing their location for a short duration.</li> " +
-                    "<li><strong>Rendezvous (Q): </strong>Creates a portal that allows Chamber to quickly traverse the battlefield and gain positional advantage.</li> " +
+                    "<li><strong>Rendezvous (Q): </strong>Creates a portal that allows Chamber to quickly traverse the battlefield.</li> " +
                     "<li><strong>Precision (E): </strong>Enhances Chamber’s weapon accuracy, reducing recoil and increasing fire rate for a limited time.</li> " +
                     "<li><strong>Mastermind (X - Ultimate): </strong>Grants vision over the entire map, revealing enemy positions and their movements for a brief period.</li> " +
                     "</ul> " +
@@ -323,8 +329,8 @@ namespace Quiz_1.Controllers
                     "<strong>Abilities:</strong> " +
                     "<ul> " +
                     "<li><strong>Incendiary (C): </strong>Throws an incendiary grenade that deals damage over time to enemies in its area of effect.</li> " +
-                    "<li><strong>Stim Beacon (Q): </strong>Deploys a stimulant beacon that grants a fire rate and reload speed bonus to allies within its radius.</li> " +
-                    "<li><strong>Sky Smoke (E): </strong>Calls in orbital smokescreens at targeted locations, providing strategic cover for teammates.</li> " +
+                    "<li><strong>Stim Beacon (Q): </strong>Deploys a stimulant beacon that grants a fire rate and reload speed bonus.</li> " +
+                    "<li><strong>Sky Smoke (E): </strong>Calls in orbital smokescreens at targeted locations, providing cover for teammates.</li> " +
                     "<li><strong>Orbital Strike (X - Ultimate): </strong>Launches a laser strike at a designated location, dealing massive damage over time.</li> " +
                     "</ul> " +
                     "<strong>Playstyle: </strong>Tactical Leader";

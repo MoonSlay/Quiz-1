@@ -3,7 +3,9 @@
 }
 <html>
 <head>
-    <link href="~/css/blog.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
             padding-top: 0px;
@@ -14,20 +16,50 @@
             background-repeat: no-repeat;
             margin: auto;
         }
+        
+        .title1 {
+            font-family: "Bodoni MT";
+            text-align: center;
+            font-size: 100px;
+            color: black;
+        }
+
+        .title2 {
+            font-family: "Bodoni MT";
+            text-align: center;
+            font-size: 25px;
+            color: black;
+        }
+
+        .name1 {
+            font-family: "Agency FB";
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .name2 {
+            font-family: "Agency FB";
+            font-size: 20px;
+        }
+
+        .bg-light-transparent {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
     </style>
+
 </head>
 
 <body>
-    <h1>@Model.Title</h1>
-    <p>@Model.Sub</p>
+    <h1 class="title1 bg-light-transparent">@Model.Title</h1>
+    <p class="title2 bg-light-transparent">@Model.Sub</p>
     <div class="row">
         <!-- mb-4 space inbetween -->
         <div class="col-md-4 mb-4">
             <div class="card" style="width: 100%;">
                 <img class="card-img-top" src="@Url.Content(Model.Image1)" alt="Card image cap" style="height: 200px; object-fit: cover;">
                 <div class="card-body">
-                    <h5 class="card-title">@Model.Name1</h5>
-                    <p class="card-text">@Html.Raw(Model.Desc1)</p>
+                    <h5 class="card-title name1">@Html.Raw(Model.Name1)</h5>
+                    <p class="card-text name2">@Html.Raw(Model.Desc1)</p>
                 </div>
             </div>
         </div>
@@ -36,8 +68,8 @@
             <div class="card" style="width: 100%;">
                 <img class="card-img-top" src="@Url.Content(Model.Image2)" alt="Card image cap" style="height: 200px; object-fit: cover;">
                 <div class="card-body">
-                    <h5 class="card-title">@Model.Name2</h5>
-                    <p class="card-text">@Html.Raw(Model.Desc2)</p>
+                    <h5 class="card-title name1">@Html.Raw(Model.Name2)</h5>
+                    <p class="card-text name2">@Html.Raw(Model.Desc2)</p>
                 </div>
             </div>
         </div>
@@ -46,8 +78,8 @@
             <div class="card" style="width: 100%;">
                 <img class="card-img-top" src="@Url.Content(Model.Image3)" alt="Card image cap" style="height: 200px; object-fit: cover;">
                 <div class="card-body">
-                    <h5 class="card-title">@Model.Name3</h5>
-                    <p class="card-text">@Html.Raw(Model.Desc1)</p>
+                    <h5 class="card-title name1">@Html.Raw(Model.Name3)</h5>
+                    <p class="card-text name2">@Html.Raw(Model.Desc3)</p>
                 </div>
             </div>
         </div>
