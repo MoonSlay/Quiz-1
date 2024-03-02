@@ -3,10 +3,55 @@
 }
 <html>
 <head>
+    <link href="~/css/blog.css" rel="stylesheet" />
+    <style>
+        body {
+            padding-top: 0px;
+            padding-bottom: 20px;
+            background-image: url('@Url.Content(Model.BgImage)');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
+    <h1>@Model.Title</h1>
+    <p>@Model.Sub</p>
+    <div class="row">
+        <!-- mb-4 space inbetween -->
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top" src="@Url.Content(Model.Image1)" alt="Card image cap" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Name1</h5>
+                    <p class="card-text">@Html.Raw(Model.Desc1)</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top" src="@Url.Content(Model.Image2)" alt="Card image cap" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Name2</h5>
+                    <p class="card-text">@Html.Raw(Model.Desc2)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top" src="@Url.Content(Model.Image3)" alt="Card image cap" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Name3</h5>
+                    <p class="card-text">@Html.Raw(Model.Desc1)</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
